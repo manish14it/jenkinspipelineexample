@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("/var/lib/jenkins/workspace/intellipat2") {
+                dir("/var/lib/jenkins/workspace/intellipat") {
                 sh 'mvn -B -DskipTests clean package'
                 }
             
